@@ -5,7 +5,7 @@ import { RoleEntity } from "./role.entity";
 @Entity()
 export class UserEntity extends BaseEntity {
 
-    @Column()
+    @Column({ nullable: true })
     firstName: string
 
     @Column({ nullable: true })
@@ -17,7 +17,7 @@ export class UserEntity extends BaseEntity {
     @Column()
     password: string;
 
-    @ManyToMany(() => RoleEntity, role => role.users)
+    @ManyToMany(() => RoleEntity, role => role.users, { nullable: true })
     @JoinTable({
         name: 'user_roles',
         joinColumn: { name: 'user_id', referencedColumnName: 'id' },

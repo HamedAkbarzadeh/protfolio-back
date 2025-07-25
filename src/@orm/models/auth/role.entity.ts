@@ -7,6 +7,6 @@ export class RoleEntity extends BaseEntity {
     @Column()
     name: string
 
-    @ManyToMany(() => UserEntity, user => user.roles)
+    @ManyToMany(() => UserEntity, user => user.roles, { nullable: true })
     users: UserEntity[]
 }
