@@ -13,10 +13,7 @@ export class AuthGuard implements CanActivate {
         private jwtService: JwtService,
         private configService: ConfigService,
         @InjectRepository(UserEntity) private userRepo: Repository<UserEntity>,
-    ) {
-        console.log("HI");
-
-    }
+    ) { }
 
     async canActivate(context: ExecutionContext) {
         const http = context.switchToHttp();
