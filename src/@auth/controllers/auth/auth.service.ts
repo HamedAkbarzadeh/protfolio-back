@@ -4,10 +4,10 @@ import { UserEntity } from 'src/@orm/models/auth/user.entity';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt'
 import * as jwt from '@nestjs/jwt'
-import { SignInDto } from './admin.dto';
+import { SignInDto } from './auth.dto';
 import { ConfigService } from '@nestjs/config';
 @Injectable()
-export class AdminService {
+export class AuthService {
     constructor(
         @InjectRepository(UserEntity) private userRepo: Repository<UserEntity>,
         private jwtService: jwt.JwtService,
@@ -38,7 +38,7 @@ export class AdminService {
         //generate access token and refresh token and setup payload for signify
         const payload = { sub: newUser.id, role: newUser.roles }
         const accessToken = this.jwtService.sign(payload, {
-            expiresIn: '10s',
+            expiresIn: '30s',
             secret: this.configService.get('JWT_ACCESS_TOKEN_SECRET')
         });
         const refreshToken = this.jwtService.sign(payload, {
@@ -70,7 +70,7 @@ export class AdminService {
         //generate access token and refresh token and setup payload for signify
         const payload = { sub: user.id, role: user.roles }
         const accessToken = this.jwtService.sign(payload, {
-            expiresIn: '10s',
+            expiresIn: '30s',
             secret: this.configService.get('JWT_ACCESS_TOKEN_SECRET')
         });
         const refreshToken = this.jwtService.sign(payload, {
@@ -85,4 +85,5 @@ export class AdminService {
             }
         }
     }
+
 }

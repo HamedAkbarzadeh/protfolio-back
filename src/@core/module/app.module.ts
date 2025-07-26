@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 
-import { UserModule } from '../../user/user.module';
 import { AuthModule } from 'src/@auth/module/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { RouteModule } from './route.module';
 import { OrmModule } from 'src/@orm/module/orm.module';
 import * as path from "path"
+import { UserModule } from 'src/user/module/user.module';
 
 @Module({
   imports: [

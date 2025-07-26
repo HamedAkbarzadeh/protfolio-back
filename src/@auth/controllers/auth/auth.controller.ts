@@ -1,21 +1,21 @@
-import { AdminService } from './admin.service';
+import { AuthService } from './auth.service';
 import { Body, Controller, Post, UseInterceptors } from '@nestjs/common';
-import { LoginDto, SignInDto } from './admin.dto';
+import { LoginDto, SignInDto } from './auth.dto';
 import { ResponseInterceptor } from 'src/@auth/types/interceptors/response.inteceptor';
 
 @Controller()
 export class AuthController {
-    constructor(private adminService: AdminService) { }
+    constructor(private authService: AuthService) { }
 
     @UseInterceptors(ResponseInterceptor)
     @Post('signin')
     signin(@Body() data: SignInDto) {
-        return this.adminService.signin(data);
+        return this.authService.signin(data);
     }
 
     @UseInterceptors(ResponseInterceptor)
     @Post('login')
     login(@Body() data: LoginDto) {
-        return this.adminService.login(data.username, data.password);
+        return this.authService.login(data.username, data.password);
     }
 }
