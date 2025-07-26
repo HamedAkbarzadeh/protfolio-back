@@ -17,6 +17,9 @@ export class UserEntity extends BaseEntity {
     @Column()
     password: string;
 
+    @Column({ nullable: true })
+    currentHashedRefreshToken: string
+
     @ManyToMany(() => RoleEntity, role => role.users, { nullable: true })
     @JoinTable({
         name: 'user_roles',

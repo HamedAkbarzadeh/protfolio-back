@@ -45,6 +45,9 @@ export class AuthService {
             expiresIn: '30d',
             secret: this.configService.get('JWT_REFRESH_TOKEN_SECRET')
         });
+        this.userRepo.update(newUser.id, {
+            currentHashedRefreshToken: await bcrypt.hash(refreshToken, 10)
+        })
         return {
             success: true,
             result: {
@@ -77,6 +80,9 @@ export class AuthService {
             expiresIn: '30d',
             secret: this.configService.get('JWT_REFRESH_TOKEN_SECRET')
         });
+        this.userRepo.update(user.id, {
+            currentHashedRefreshToken: await bcrypt.hash(refreshToken, 10)
+        })
         return {
             success: true,
             result: {
