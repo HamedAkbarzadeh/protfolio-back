@@ -6,6 +6,7 @@ import * as bcrypt from 'bcrypt'
 import * as jwt from '@nestjs/jwt'
 import { SignInDto } from './auth.dto';
 import { ConfigService } from '@nestjs/config';
+import { Request } from 'express';
 @Injectable()
 export class AuthService {
     constructor(
@@ -14,7 +15,7 @@ export class AuthService {
         private configService: ConfigService
     ) { }
 
-    async signin(data: SignInDto) {
+    async signup(data: SignInDto) {
         const user = await this.userRepo.findBy({ username: data.username })
 
         if (user.length)
@@ -92,8 +93,10 @@ export class AuthService {
         }
     }
 
-    async getRefreshToken() {
-        
+    generateRefreshToken(req: Request) {
+        return {
+            newAccessToken: req['newAccessToken']
+        }
     }
 
 }

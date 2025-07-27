@@ -40,12 +40,17 @@ export class RefreshTokenGuard implements CanActivate {
             if (!isMatch) {
                 throw new UnauthorizedException('Refresh token mismatch');
             }
+            const newAccessToken = this.jwtService.sign({ sub: user.id }, {
+                expiresIn: '30s',
+                secret: this.configService.get('JWT_ACCESS_TOKEN_SECRET')
+            });
 
+            req['newAccessToken'] = newAccessToken
             req['user'] = user;
             return true;
 
         } catch (error) {
-            throw new UnauthorizedException('Refresh token is invalid');
+            throw new UnauthorizedException('Refresh token is invalid' + error);
         }
     }
 

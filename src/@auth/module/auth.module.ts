@@ -6,6 +6,7 @@ import { ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from 'src/@orm/models/auth/user.entity';
 import { RoleEntity } from 'src/@orm/models/auth/role.entity';
+import { RefreshTokenGuard } from '../types/guards/refresh-token.guard';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { RoleEntity } from 'src/@orm/models/auth/role.entity';
     TypeOrmModule.forFeature([UserEntity, RoleEntity])
   ],
   controllers: [AuthController],
-  providers: [AuthService],
+  providers: [AuthService, RefreshTokenGuard],
   exports: [JwtModule, TypeOrmModule]
 })
 export class AuthModule { }
