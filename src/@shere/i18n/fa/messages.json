@@ -1,0 +1,48 @@
+{
+  "error_in_db": "خطا در پایگاه داده",
+  "error_in_fetch": "خطا در دریافت اطلاعات",
+  "not_found_record": "رکوردی یافت نشد",
+  "internal_server_error": "خطای سرور داخلی",
+  "not_found_user": "کاربر پیدا نشد",
+  "error_in_find_schedules": "خطا در یافتن برنامه‌ها",
+  "you_already_have_telechat": "شما قبلاً یک تله‌چت داشته‌اید",
+  "error_in_get_schedules": "خطا در گرفتن برنامه‌ها",
+  "your_schedule_has_been_used_by_another_patient": "برنامه شما توسط بیمار دیگری استفاده شده است",
+  "not_found_plan": "برنامه پیدا نشد",
+  "please_buy_a_plan": "لطفاً یک برنامه بخرید",
+  "not_found_offline_schedule_in_next_7_days": "در هفت روز آینده برنامه آفلاینی یافت نشد",
+  "error_in_db_to_get_count_of_your_schedule": "خطا در پایگاه داده برای گرفتن تعداد برنامه‌های شما",
+  "maximum_count_of_online_schedule_for_your_plan_is": "حداکثر تعداد برنامه‌های آنلاین برای برنامه شما",
+  "not_found_the_schedule": "برنامه یافت نشد",
+  "the_type_of_your_schedules_should_be_online_or_inperson": "نوع برنامه‌های شما باید آنلاین یا حضوری باشد",
+  "comment_not_found": "نظری یافت نشد",
+  "not_found_evaluations": "ارزیابی‌ای یافت نشد",
+  "not_found_your_exercise": "ورزش شما یافت نشد",
+  "your_exercise_is_locked": "ورزش شما قفل شده است",
+
+
+
+
+
+  "assessment": "ارزیابی",
+  "problem_list": "لیست مشکلات",
+  "assessment_statement": "بیانیه ارزیابی",
+  "patient_goals": "اهداف بیمار",
+  "short_term_goals": "اهداف کوتاه مدت",
+  "long_term_goals": "اهداف بلند مدت",
+  "rehab_potential": "پتانسیل توانبخشی",
+  "procedures": "رویه ها",
+  "diagnoses": "تشخیص ها",
+  "plan": "برنامه ریزی",
+  "statement": "بیانیه",
+  "treatment_plan_will_include": "برنامه درمانی شامل خواهد شد",
+  "visit_frequency_times_per_wk": "تعداد دفعات بازدید در هفته",
+  "treatment_duration_wks":"مدت زمان درمان (هفته)",
+  "treatment":"درمان",
+  "therapeutic_exercise":"تمرین درمانی",
+  "therapeutic_activities": "فعالیت های درمانی",
+  "therapy_exercises":"تمرینات درمانی",
+  "patient_education":"آموزش به بیمار",
+  "prescribedexercises":"تمرینات تجویز شده",
+  "prescribedexercisestitles":"عناوین تمرینات تجویز شده"
+}

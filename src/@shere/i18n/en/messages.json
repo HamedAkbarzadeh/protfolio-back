@@ -1,0 +1,48 @@
+{
+  "error_in_db": "error in db",
+  "error_in_fetch": "error in fetch",
+  "not_found_record": "not found record",
+  "internal_server_error": "internal server error",
+  "not_found_user": "not found user",
+  "error_in_find_schedules": "error in find schedules",
+  "you_already_have_telechat": "you already have telechat",
+  "error_in_get_schedules": "error in get schedules",
+  "your_schedule_has_been_used_by_another_patient": "Your schedule has been used by another patient",
+  "not_found_plan": "not found plan",
+  "please_buy_a_plan": "Please buy a plan",
+  "not_found_offline_schedule_in_next_7_days": "Not found offline schedule in next 7 days",
+  "error_in_db_to_get_count_of_your_schedule": "error in db to get count of your schedule",
+  "maximum_count_of_online_schedule_for_your_plan_is": "Maximum count of online schedule for your plan is",
+  "not_found_the_schedule": "Not found the schedule",
+  "the_type_of_your_schedules_should_be_online_or_inperson": "The type of your schedules should be online or inperson",
+  "comment_not_found": "Comment not found",
+  "not_found_evaluations": "Not found evaluations",
+  "not_found_your_exercise": "Not found your exercise",
+  "your_exercise_is_locked": "Your exercise is locked",
+
+
+
+
+
+  "assessment": "Assessment",
+  "problem_list": "Problem List",
+  "assessment_statement": "Assessment Statement",
+  "patient_goals": "Patient Goals",
+  "short_term_goals": "Short Term Goals",
+  "long_term_goals": "Long Term Goals",
+  "rehab_potential": "Rehab Potential",
+  "procedures": "procedures",
+  "diagnoses": "Diagnoses",
+  "plan": "Plan",
+  "statement": "Statement",
+  "treatment_plan_will_include": "Treatment Plan Will Include",
+  "visit_frequency_times_per_wk": "Visit Frequency Times Per Wk",
+  "treatment_duration_wks":"Treatment Duration Wks",
+  "treatment":"Treatment",
+  "therapeutic_exercise":"Therapeutic Exercise",
+  "therapeutic_activities": "Therapeutic Activities",
+  "therapy_exercises":"Therapy Exercises",
+  "patient_education":"Patient Education",
+  "prescribedexercises":"Prescribed Exercises",
+  "prescribedexercisestitles":"Prescribed Exercises Titles"
+}
