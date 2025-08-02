@@ -19,4 +19,8 @@ export class SkillService {
             throw new HttpException("db error", HttpStatus.BAD_GATEWAY)
         return skill;
     }
+
+    removeSkill(id: number) {
+        return this.skillRepo.delete(id)
+    }
 }

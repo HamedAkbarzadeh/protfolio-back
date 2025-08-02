@@ -10,5 +10,5 @@ export class SkillEntity extends BaseEntity {
     rait: number
 
     @Column({ enum: ['ACTIVE', 'INACTIVE'] })
-    status: ['ACTIVE', 'INACTIVE']
+    status: string
 }
