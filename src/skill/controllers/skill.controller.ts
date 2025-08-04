@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { CreateSkillDto } from './skill.dto';
 import { SkillService } from './skill.service';
 
-@Controller('skill')
+@Controller()
 export class SkillController {
 
     constructor(private skillService: SkillService) { }
