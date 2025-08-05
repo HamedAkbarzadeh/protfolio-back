@@ -12,10 +12,10 @@ export class SkillService {
         private readonly i18n: I18nBaseService
     ) { }
 
-
     getAll() {
         return this.skillRepo.find()
     }
+
 
     async create(data: CreateSkillDto) {
         const skill = await this.skillRepo.save(data);
