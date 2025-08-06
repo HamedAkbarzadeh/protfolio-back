@@ -3,8 +3,8 @@ import { ProtfolioService } from "./protfolio.service";
 import { ProtfolioCreateDto } from "./protfolio.dto";
 
 
-@Controller('protfolio')
-export class ProfolioConroller {
+@Controller()
+export class ProtfolioController {
 
     constructor(private readonly protfolioService: ProtfolioService) { }
 

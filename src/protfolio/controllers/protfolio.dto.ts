@@ -18,9 +18,6 @@ export class ProtfolioCreateDto {
     @IsString()
     link: string
 
-    @IsOptional()
-    @IsString({ each: true })
-    tags: string[];
 
     @IsOptional()
     @IsBoolean()

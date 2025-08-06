@@ -15,9 +15,6 @@ export class ProtfolioEntity extends BaseEntity {
     @Column()
     link: string
 
-    @Column({ nullable: true })
-    tags: string[];
-
     @Column({ default: false })
     isActive: boolean;
 

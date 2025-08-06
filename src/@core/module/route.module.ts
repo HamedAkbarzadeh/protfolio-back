@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { RouterModule } from '@nestjs/core';
 import { AuthModule } from 'src/@auth/module/auth.module';
+import { ProtfolioModule } from 'src/protfolio/module/protfolio.module';
 import { SkillModule } from 'src/skill/module/skill.module';
 import { UserModule } from 'src/user/module/user.module';
 @Module({
@@ -20,6 +21,10 @@ import { UserModule } from 'src/user/module/user.module';
           {
             path: 'skills',
             module: SkillModule
+          },
+          {
+            path: 'protfolio',
+            module: ProtfolioModule
           }
         ],
       },
