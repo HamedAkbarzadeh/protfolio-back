@@ -9,10 +9,12 @@ import { UserModule } from 'src/user/module/user.module';
 import { AcceptLanguageResolver, HeaderResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import { i18nOptions } from '../constant/init.options.const';
 import { SkillModule } from 'src/skill/module/skill.module';
+import { ProtfolioModule } from 'src/protfolio/module/protfolio.module';
 
 @Module({
   imports: [
     SkillModule,
+    ProtfolioModule,
     UserModule,
     AuthModule,
     RouteModule,
