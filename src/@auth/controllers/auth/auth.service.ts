@@ -74,7 +74,7 @@ export class AuthService {
         //generate access token and refresh token and setup payload for signify
         const payload = { sub: user.id, role: user.roles }
         const accessToken = this.jwtService.sign(payload, {
-            expiresIn: '30s',
+            expiresIn: '1d',
             secret: this.configService.get('JWT_ACCESS_TOKEN_SECRET')
         });
         const refreshToken = this.jwtService.sign(payload, {

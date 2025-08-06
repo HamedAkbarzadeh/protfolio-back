@@ -19,11 +19,9 @@
   "not_found_evaluations": "ارزیابی‌ای یافت نشد",
   "not_found_your_exercise": "ورزش شما یافت نشد",
   "your_exercise_is_locked": "ورزش شما قفل شده است",
-
-
-
-
-
+  "user_not_found": "کاربر یافت نشد",
+  "role_not_found": "نقش یافت نشد",
+  
   "assessment": "ارزیابی",
   "problem_list": "لیست مشکلات",
   "assessment_statement": "بیانیه ارزیابی",
@@ -37,12 +35,12 @@
   "statement": "بیانیه",
   "treatment_plan_will_include": "برنامه درمانی شامل خواهد شد",
   "visit_frequency_times_per_wk": "تعداد دفعات بازدید در هفته",
-  "treatment_duration_wks":"مدت زمان درمان (هفته)",
-  "treatment":"درمان",
-  "therapeutic_exercise":"تمرین درمانی",
+  "treatment_duration_wks": "مدت زمان درمان (هفته)",
+  "treatment": "درمان",
+  "therapeutic_exercise": "تمرین درمانی",
   "therapeutic_activities": "فعالیت های درمانی",
-  "therapy_exercises":"تمرینات درمانی",
-  "patient_education":"آموزش به بیمار",
-  "prescribedexercises":"تمرینات تجویز شده",
-  "prescribedexercisestitles":"عناوین تمرینات تجویز شده"
+  "therapy_exercises": "تمرینات درمانی",
+  "patient_education": "آموزش به بیمار",
+  "prescribedexercises": "تمرینات تجویز شده",
+  "prescribedexercisestitles": "عناوین تمرینات تجویز شده"
 }

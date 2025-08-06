@@ -19,11 +19,9 @@
   "not_found_evaluations": "Not found evaluations",
   "not_found_your_exercise": "Not found your exercise",
   "your_exercise_is_locked": "Your exercise is locked",
-
-
-
-
-
+  "user_not_found": "User not found",
+  "role_not_found": "Role not found",
+  
   "assessment": "Assessment",
   "problem_list": "Problem List",
   "assessment_statement": "Assessment Statement",
@@ -37,12 +35,12 @@
   "statement": "Statement",
   "treatment_plan_will_include": "Treatment Plan Will Include",
   "visit_frequency_times_per_wk": "Visit Frequency Times Per Wk",
-  "treatment_duration_wks":"Treatment Duration Wks",
-  "treatment":"Treatment",
-  "therapeutic_exercise":"Therapeutic Exercise",
+  "treatment_duration_wks": "Treatment Duration Wks",
+  "treatment": "Treatment",
+  "therapeutic_exercise": "Therapeutic Exercise",
   "therapeutic_activities": "Therapeutic Activities",
-  "therapy_exercises":"Therapy Exercises",
-  "patient_education":"Patient Education",
-  "prescribedexercises":"Prescribed Exercises",
-  "prescribedexercisestitles":"Prescribed Exercises Titles"
+  "therapy_exercises": "Therapy Exercises",
+  "patient_education": "Patient Education",
+  "prescribedexercises": "Prescribed Exercises",
+  "prescribedexercisestitles": "Prescribed Exercises Titles"
 }
