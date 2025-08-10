@@ -1,4 +1,4 @@
-import { IsEnum, IsNotEmpty, IsNumber, IsString } from "class-validator";
+import { IsEnum, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 import { SkillStatus } from "../types/skill.constansts";
 import { StatusType } from "src/@orm/models/index.enum";
 
@@ -12,7 +12,7 @@ export class CreateSkillDto {
     rait: number
 
     @IsEnum(StatusType)
-    @IsNotEmpty()
+    @IsOptional()
     status: StatusType
 }
 

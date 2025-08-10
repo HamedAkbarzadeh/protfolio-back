@@ -10,6 +10,6 @@ export class SkillEntity extends BaseEntity {
     @Column()
     rait: number
 
-    @Column({ enum: ['ACTIVE', 'INACTIVE'] })
+    @Column({ enum: ['ACTIVE', 'INACTIVE'] , default : "ACTIVE" })
     status: StatusType
 }
