@@ -10,21 +10,23 @@ import { AcceptLanguageResolver, HeaderResolver, I18nModule, QueryResolver } fro
 import { i18nOptions } from '../constant/init.options.const';
 import { SkillModule } from 'src/skill/module/skill.module';
 import { ProtfolioModule } from 'src/protfolio/module/protfolio.module';
+import { UploadModule } from 'src/@shere/module/upload/upload.module';
 
 @Module({
-  imports: [
-    SkillModule,
-    ProtfolioModule,
-    UserModule,
-    AuthModule,
-    RouteModule,
-    OrmModule,
-    ConfigModule.forRoot({
-      isGlobal: true,
-      envFilePath: path.join('env', `.env.${process.env.NODE_ENV}`),
-    }),
-    I18nModule.forRoot(i18nOptions)
-  ],
+    imports: [
+        UploadModule,
+        SkillModule,
+        ProtfolioModule,
+        UserModule,
+        AuthModule,
+        RouteModule,
+        OrmModule,
+        ConfigModule.forRoot({
+            isGlobal: true,
+            envFilePath: path.join('env', `.env.${process.env.NODE_ENV}`),
+        }),
+        I18nModule.forRoot(i18nOptions)
+    ],
 })
 export class AppModule {
 }

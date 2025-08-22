@@ -16,6 +16,6 @@ export class ProtfolioEntity extends BaseEntity {
     link: string
 
     @Column({ default: false })
-    isActive: boolean;
+    status: boolean;
 
 }
