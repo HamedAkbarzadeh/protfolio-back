@@ -4,7 +4,7 @@ export class ProtfolioCreateDto {
 
     @IsString()
     @IsNotEmpty()
-    name: string;
+    title: string;
 
     @IsString()
     @IsOptional()
@@ -12,7 +12,7 @@ export class ProtfolioCreateDto {
 
     @IsString()
     @IsNotEmpty()
-    imageUrl: string;
+    image: string;
 
     @IsNotEmpty()
     @IsString()

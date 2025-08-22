@@ -28,7 +28,7 @@ export class ProtfolioController {
         return this.protfolioService.update(+id, body);
     }
 
-    @Post()
+    @Post('create')
     create(@Body() body: ProtfolioCreateDto) {
         return this.protfolioService.create(body);
     }

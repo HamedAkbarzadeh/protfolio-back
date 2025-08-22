@@ -1,5 +1,6 @@
 import { Column, Entity } from "typeorm";
 import { BaseEntity } from "../@base/base.entity";
+import { StatusType } from "../index.enum";
 
 @Entity()
 export class ProtfolioEntity extends BaseEntity {
@@ -15,7 +16,7 @@ export class ProtfolioEntity extends BaseEntity {
     @Column()
     link: string
 
-    @Column({ default: false })
-    status: boolean;
+    @Column({ enum: ['ACTIVE', 'INACTIVE'] , default : "ACTIVE" })
+    status: StatusType
 
 }
