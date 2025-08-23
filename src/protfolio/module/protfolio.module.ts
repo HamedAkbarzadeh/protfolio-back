@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProtfolioEntity } from 'src/@orm/models/protfolio/protfolio.entity';
-import { ProtfolioController } from '../controllers/protfolio.controllers';
+import { ProtfolioController } from '../controllers/protfolio.controller';
 import { ProtfolioService } from '../controllers/protfolio.service';
 
 @Module({

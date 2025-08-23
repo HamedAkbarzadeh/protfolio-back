@@ -11,9 +11,11 @@ import { i18nOptions } from '../constant/init.options.const';
 import { SkillModule } from 'src/skill/module/skill.module';
 import { ProtfolioModule } from 'src/protfolio/module/protfolio.module';
 import { UploadModule } from 'src/@shere/module/upload/upload.module';
+import { ContactModule } from 'src/contact/module/contact.module';
 
 @Module({
     imports: [
+        ContactModule,
         UploadModule,
         SkillModule,
         ProtfolioModule,
